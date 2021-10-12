@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak Buku</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Satisfy&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Rack Boekoe</h1>
+        <form id="searching">
+            <input type="text" id="judul_buku" name="judul_buku" placeholder="Search">
+            <input type="submit" value="find"></input>
+        </form>
+    </header>
+    <main>
+
+        <section id="blm_baca">
+            <h2>Belum Dibaca</h2>
+            <div id="box-blmbaca">
+                <!-- Daftar Buku -->
+            </div>
+        </section>
+
+        <section id="tambah_bacaan">
+            <h2>Tambah Buku</h2>
+            <form id="form" class="form">
+                <label for="">Judul Buku</label> <br>
+                <input id="title-book" type="text" placeholder="Cth : Harry and Potter" value="My Pride" required> <br> <br>
+
+                <label for="">Nama Pengarang</label> <br>
+                <input id="author" type="text" placeholder="Cth : Kurisu Tyna" value="Aoi Riki" required> <br> <br>
+
+                <label for="">Tahun Terbit</label> <br>
+                <input id="year" type="number" placeholder="Cth : 2020" value="2021" required> <br> <br>
+
+                Sudah Dibaca?
+                <input id="isComplete" type="checkbox" >
+
+                <input id="submit" type="submit" value="Submit"> <br>
+            </form>
+        </section>
+
+        <section id="baca">
+            <h2>Telah Dibaca</h2>
+            <div id="box-baca">
+                <!-- Daftar Buku -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="data.js"></script>
+    <script src="dom.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
